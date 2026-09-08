@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>الحجز</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>📅 احجز طاولتك</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="menu.html">قائمة الطعام</a></li>
+        <li><a href="order.html">الحجز</a></li>
+        <li><a href="branches.html">الفروع</a></li>
+        <li><a href="about.html">من نحن</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <form id="reservationForm">
+      <label for="name">الاسم:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="phone">رقم الجوال:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="date">التاريخ:</label>
+      <input type="date" id="date" name="date" required />
+
+      <input type="submit" value="احجز الآن" />
+    </form>
+    <p id="confirmationMsg"></p>
+  </section>
+
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeSuccessModal" title="إغلاق">&times;</span>
+      <h2 id="successText">🎉 تم الحجز!</h2>
+    </div>
+  </div>
+</body>
+</html>

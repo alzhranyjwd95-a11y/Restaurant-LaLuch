@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <link rel="stylesheet" href="CSS/style.css">
+  <meta charset="UTF-8">
+  <nav>
+      <a href="index.html">الرئيسية</a>
+    </nav>
+  <title>اختيارات</title>
+  <script>
+    function goToPage() {
+      let choice = document.getElementById("choice").value;
+      if (choice !== "") {
+        window.location.href = choice;
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <div class="center-select">
+    <h1>اختر القسم الذي تريد الانتقال إليه</h1>
+
+    <select id="choice">
+      <option value="">-- اختر من القائمة --</option>
+      <option value="menu.html">قائمة الطعام</option>
+      <option value="branches.html">الفروع</option>
+    </select>
+
+    <br>
+
+    <button onclick="goToPage()">اذهب</button>
+  </div>
+
+</body>
+</html>
